@@ -3,6 +3,8 @@ from flask_cors import CORS
 import csv
 import os
 from datetime import datetime
+from flask import Flask, request, jsonify, render_template
+
 
 app = Flask(__name__)
 CORS(app)  # später kannst du hier origins=["https://deine-seite.de"] setzen
@@ -54,6 +56,9 @@ def track_view():
 
     return jsonify({'success': True})
 
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
