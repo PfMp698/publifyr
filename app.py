@@ -1,13 +1,13 @@
-from flask import Flask, request, jsonify, render_template, send_file
+from flask import Flask, request, jsonify, render_template, send_file, abort
 from flask_cors import CORS
 import csv
 import os
 from datetime import datetime
-from flask import Flask, request, jsonify, render_template, send_file, abort
-
 
 app = Flask(__name__)
 CORS(app)  # später kannst du hier origins=["https://deine-seite.de"] setzen
+
+PASSWORT = "12345678910"  # DEIN Passwort für beide Downloads!
 
 @app.route('/api/signup', methods=['POST'])
 def signup():
@@ -56,14 +56,21 @@ def track_view():
 
     return jsonify({'success': True})
 
-# === HIER: Download-Endpunkt für emails.csv ===
+# === Download-Endpunkt für emails.csv ===
 @app.route('/download-emails')
 def download_emails():
     pw = request.args.get("pw", "")
-    if pw != "12345678910":
+    if pw != PASSWORT:
         abort(403)
     return send_file('emails.csv', as_attachment=True)
 
+# === Download-Endpunkt für button_clicks.csv ===
+@app.route('/download-clicks')
+def download_clicks():
+    pw = request.args.get("pw", "")
+    if pw != PASSWORT:
+        abort(403)
+    return send_file('button_clicks.csv', as_attachment=True)
 
 @app.route("/")
 def index():
