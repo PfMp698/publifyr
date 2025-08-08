@@ -11,12 +11,11 @@
    <link rel="shortcut icon" href="images/favicon.ico">
    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
    <link rel="manifest" href="images/site.webmanifest">
-<!-- Flask-kompatible Einbindung -->
-<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/slick.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/all.min.css') }}" rel="stylesheet">
-
+   <!--Added by designer-->
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/slick.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+   <link href="css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +24,8 @@
       <div class="container">
          <div class="navbar">
             <div class="nav-logo">
-               <a href="index.html" class="logo"><img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="logo" class="img-fluid"></a>
+               <a href="index.html" class="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="img-fluid">
+
             </div>
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
                <span class="toggler-icon"></span>
@@ -51,7 +51,7 @@
                   </li>
                </ul>
                <a href="#" class="btn btn-blue scroll-to-beta">
-                  <img src="{{ url_for('static', filename='images/btn-vector.svg') }}"  alt="btn-vector" class="img-fluid">
+                  <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="btn-vector" class="img-fluid">
                   Kostenlos testen
                </a>
             </div>
@@ -87,7 +87,8 @@
                   </div>
                   <div class="hero-main-content">
                      <div class="sub-title">
-                        <img src="{{ url_for('static', filename='images/btn-vector.svg') }}"  alt="sub-vector" class="img-fluid">
+                        <img src="{{ url_for('static', filename='images/subtitle-vector.svg') }}" alt="sub-vector" class="img-fluid">
+
                         <p>Ausgezeichnetes Finanzmanagement</p>
                      </div>
                      <div class="main-title">
@@ -109,7 +110,8 @@
 
       <!--banner-img-->
       <div class="banner-img">
-         <img src="{{ url_for('static', filename='images/btn-vector.svg') }}"  alt="banner-img" class="img-fluid">
+         <img src="{{ url_for('static', filename='images/banner-img.png') }}" alt="banner-img" class="img-fluid">
+
       </div>
       <!--banner-img-->
 
@@ -119,10 +121,10 @@
             <div class="browser-reviews-inner">
                <div class="browser-reviews-block">
                   <ul>
-                     <li><img src="{{ url_for('static', filename='images/btn-vector.svg') }}"  alt="person-img" class="img-fluid"></li>
-                     <li><img src="{{ url_for('static', filename='images/btn-vector.svg') }}"  alt="person-img" class="img-fluid"></li>
-                     <li><img src="{{ url_for('static', filename='images/btn-vector.svg') }}"  alt="person-img" class="img-fluid"></li>
-                     <li><img src="{{ url_for('static', filename='images/btn-vector.svg') }}"  alt="person-img" class="img-fluid"></li>
+                     <li><img src="{{ url_for('static', filename='images/person-img-1.png') }}" alt="person-img" class="img-fluid"></li>
+                     <li><img src="{{ url_for('static', filename='images/person-img-2.png') }}" alt="person-img" class="img-fluid"></li>
+                     <li><img src="{{ url_for('static', filename='images/person-img-3.png') }}" alt="person-img" class="img-fluid"></li>
+                     <li><img src="{{ url_for('static', filename='images/person-img-4.png') }}" alt="person-img" class="img-fluid"></li>
                   </ul>
                   <div class="browser-reviews-wrp">
                      <ul>
@@ -138,7 +140,8 @@
                   </div>
                </div>
                <div class="browser-reviews-block">
-                  <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="chrome" class="img-fluid">
+                  <img src="{{ url_for('static', filename='images/chrome.svg') }}" alt="chrome" class="img-fluid">
+
                   <div class="browser-reviews-wrp">
                      <ul>
                         <span>5.0</span>
@@ -208,7 +211,7 @@
                   <div class="automation-block-flx">
                      <div class="automation-block">
                         <div class="automation-vector">
-                           <figure><img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="automation-vector" class="img-fluid">
+                           <figure><img src="images/automation-vector.svg" alt="automation-vector" class="img-fluid">
                            </figure>
                         </div>
                         <div class="block-title">
@@ -225,7 +228,7 @@
                      </div>
                      <div class="automation-block">
                         <div class="automation-vector">
-                           <figure><img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="automation-vector" class="img-fluid">
+                           <figure><img src="images/automation-vector.svg" alt="automation-vector" class="img-fluid">
                            </figure>
                         </div>
                         <div class="block-title">
@@ -242,7 +245,7 @@
                      </div>
                      <div class="automation-block">
                         <div class="automation-vector">
-                           <figure><img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="automation-vector" class="img-fluid">
+                           <figure><img src="images/automation-vector.svg" alt="automation-vector" class="img-fluid">
                            </figure>
                         </div>
                         <div class="block-title">
@@ -258,7 +261,7 @@
                      </div>
                      <div class="automation-block">
                         <div class="automation-vector">
-                           <figure><img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="automation-vector" class="img-fluid">
+                           <figure><img src="images/automation-vector.svg" alt="automation-vector" class="img-fluid">
                            </figure>
                         </div>
                         <div class="block-title">
@@ -279,7 +282,7 @@
                      <div class="automation-block">
                         <div class="automation-block-col-top">
                            <div class="automation-vector">
-                              <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="automation-vector" class="img-fluid">
+                              <img src="images/automation-vector.svg" alt="automation-vector" class="img-fluid">
 
                            </div>
                            <div class="block-title">
@@ -298,14 +301,14 @@
                            </div>
                         </div>
                         <div class="automation-img">
-                          <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="automation-img" class="img-fluid">
+                           <img src="images/automation-img.png" alt="automation-img" class="img-fluid">
                         </div>
                      </div>
                   </div>
                </div>
 
                <a href="#" class="btn btn-blue scroll-to-beta">
-                  <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="btn-vector" class="img-fluid">
+                  <img src="images/btn-vector.svg" alt="btn-vector" class="img-fluid">
                   Kostenlos Testen</a>
             </div>
          </div>
@@ -326,7 +329,7 @@
                <div class="faq-flx">
                   <div class="faq-block">
                      <div class="faq-vector">
-                       <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="faq-vector" class="img-fluid">
+                        <img src="images/faq-vector.svg" alt="faq-vector" class="img-fluid">
                      </div>
                      <div class="block-title">
                         <h5>Was unterscheidet Publifyr von anderen Tools?</h5>
@@ -337,12 +340,12 @@
                      </div>
 
                      <a href="#" class="btn btn-blue scroll-to-beta">
-                        <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="btn-vector" class="img-fluid">
+                        <img src="images/btn-vector.svg" alt="btn-vector" class="img-fluid">
                         Mehr erfahren</a>
                   </div>
                   <div class="faq-block">
                      <div class="faq-vector">
-                       <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="faq-vector" class="img-fluid">
+                        <img src="images/faq-vector.svg" alt="faq-vector" class="img-fluid">
                      </div>
                      <div class="block-title">
                         <h5>Ist technisches Vorwissen nötig?</h5>
@@ -353,12 +356,12 @@
                      </div>
 
                      <a href="#" class="btn btn-blue scroll-to-beta">
-                        <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="btn-vector" class="img-fluid">
+                        <img src="images/btn-vector.svg" alt="btn-vector" class="img-fluid">
                         Mehr erfahren</a>
                   </div>
                   <div class="faq-block">
                      <div class="faq-vector">
-                      <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="faq-vector" class="img-fluid">
+                        <img src="images/faq-vector.svg" alt="faq-vector" class="img-fluid">
                      </div>
                      <div class="block-title">
                         <h5>Wie funktioniert der KI-Modus genau?</h5>
@@ -370,7 +373,7 @@
                      </div>
 
                      <a href="#" class="btn btn-blue scroll-to-beta">
-                        <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="btn-vector" class="img-fluid">
+                        <img src="images/btn-vector.svg" alt="btn-vector" class="img-fluid">
                         Mehr erfahren</a>
                   </div>
                </div>
@@ -384,7 +387,7 @@
          <div class="container">
             <div class="features-wrp">
                <div class="sub-title">
-                  <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="sub-vector" class="img-fluid">
+                  <img src="images/subtitle-vector-2.svg" alt="sub-vector" class="img-fluid">
                   <p>Features</p>
                </div>
                <div class="section-title">
@@ -411,12 +414,12 @@
                            <p>Nicht einfach nur ein Tool – ein Publishing-Co-Pilot.</p>
                         </div>
                         <a href="#" id="ki-features-btn" class="btn btn-blue">
-                           <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="btn-vector" class="img-fluid">
+                           <img src="images/btn-vector.svg" alt="btn-vector" class="img-fluid">
                            KI-Features ansehen</a>
                      </div>
                      <div class="features-right">
                         <div class="feature-img">
-                          <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="feature-img" class="img-fluid">
+                           <img src="images/feature-img.png" alt="feature-img" class="img-fluid">
                         </div>
                      </div>
                   </div>
@@ -454,7 +457,7 @@
                   <div class="authors-block">
                      <div class="authors-block-inner">
                         <div class="author-inner">
-                          <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="google" class="img-fluid">
+                           <img src="images/google.svg" alt="google" class="img-fluid">
                            <div class="small-detail">
                               <p>„Ein großartiges Tool. Hat mir geholfen, meine Publishing-Abläufe mit nur wenigen
                                  Klicks
@@ -469,7 +472,7 @@
                            </ul>
                         </div>
                         <div class="author-detail">
-                          <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="author" class="img-fluid">
+                           <img src="images/author-1.png" alt="author" class="img-fluid">
                            <div class="author-text">
                               <p>James Conway</p>
                               <span>2 days ago</span>
@@ -481,7 +484,7 @@
                      <div class="authors-block-inner">
 
                         <div class="author-inner">
-                         <img src="{{ url_for('static', filename='images/btn-vector.svg') }} alt="google" class="img-fluid">
+                           <img src="images/google.svg" alt="google" class="img-fluid">
                            <div class="small-detail">
                               <p>„Sehr empfehlenswert! Spart mir jede Woche Stunden und macht den gesamten Prozess viel
                                  reibungsloser.“</p>
@@ -495,7 +498,7 @@
                            </ul>
                         </div>
                         <div class="author-detail">
-                          <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="author" class="img-fluid">
+                           <img src="images/author-2.png" alt="author" class="img-fluid">
                            <div class="author-text">
                               <p>James Conway</p>
                               <span>2 days ago</span>
@@ -508,7 +511,7 @@
                      <div class="authors-block-inner">
 
                         <div class="author-inner">
-                          <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="google" class="img-fluid">
+                           <img src="images/google.svg" alt="google" class="img-fluid">
                            <div class="small-detail">
                               <p>„Die Automatisierungsfunktionen sind genial. Endlich kann ich mich aufs Schreiben
                                  konzentrieren – Publifyr übernimmt den
@@ -523,7 +526,7 @@
                            </ul>
                         </div>
                         <div class="author-detail">
-                          <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="author" class="img-fluid">
+                           <img src="images/author-3.png" alt="author" class="img-fluid">
                            <div class="author-text">
                               <p>James Conway</p>
                               <span>2 days ago</span>
@@ -535,7 +538,7 @@
                      <div class="authors-block-inner">
 
                         <div class="author-inner">
-                           <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" class="img-fluid">
+                           <img src="images/google.svg" alt="google" class="img-fluid">
                            <div class="small-detail">
                               <p>„Die Automatisierungsfunktionen sind genial. Endlich kann ich mich aufs Schreiben
                                  konzentrieren – Publifyr
@@ -551,7 +554,7 @@
                            </ul>
                         </div>
                         <div class="author-detail">
-                          <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="author" class="img-fluid">
+                           <img src="images/author-3.png" alt="author" class="img-fluid">
                            <div class="author-text">
                               <p>James Conway</p>
                               <span>2 days ago</span>
@@ -562,7 +565,7 @@
                </div>
                <div class="author-btn">
                   <a href="#" class="btn btn-blue scroll-to-beta">
-                    <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="btn-vector" class="img-fluid">
+                     <img src="images/btn-vector.svg" alt="btn-vector" class="img-fluid">
                      Jetzt Kostenlos Testen</a>
                </div>
             </div>
@@ -589,12 +592,12 @@
                      <label for="beta-email">Email <span>*</span></label>
                      <input id="beta-email" type="email" class="form-control" placeholder="Deine E-Mail">
                      <div class="form-icon">
-                        <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="email" class="img-fluid">
+                        <img src="images/email.svg" alt="email" class="img-fluid">
                      </div>
                   </div>
                   <!-- HIER: Button direkt nach dem Input, fürs gleiche Layout! -->
                   <button id="beta-submit" class="btn btn-blue" type="button" style="margin-top:10px;">
-                    <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="btn-vector" class="img-fluid">
+                     <img src="images/btn-vector.svg" alt="btn-vector" class="img-fluid">
                      Kostenlos Testen
                   </button>
                   <div id="beta-feedback" style="margin-top:10px;"></div>
@@ -622,7 +625,7 @@
             <div class="footer-flx">
                <div class="footer-left">
                   <a href="index.html" class="footer-img">
-                    <img src="{{ url_for('static', filename='images/btn-vector.svg') }}" alt="footer-logo" class="img-fluid">
+                     <img src="images/footer-logo.png" alt="footer-logo" class="img-fluid">
                   </a>
                   <div class="small-detail">
                      <p>Hilf uns, Publifyr noch besser zu machen. Als Beta-User bekommst du frühen Zugriff – und
