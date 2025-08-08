@@ -3,6 +3,8 @@ from flask_cors import CORS
 import csv
 import os
 from datetime import datetime
+from flask import Flask, request, jsonify, render_template, send_file, abort
+
 
 app = Flask(__name__)
 CORS(app)  # später kannst du hier origins=["https://deine-seite.de"] setzen
