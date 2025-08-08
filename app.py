@@ -55,7 +55,7 @@ def track_view():
         writer.writerow([timestamp])
 
     return jsonify({'success': True})
-
+ 
 @app.route("/")
 def index():
     return render_template("index.html")
