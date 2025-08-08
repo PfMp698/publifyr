@@ -743,7 +743,8 @@
   // Footer-Formular
   document.getElementById('footer-submit').onclick = function() {
       const email = document.getElementById('footer-email').value;
-      fetch('http://localhost:5000/api/signup', {
+      fetch('/api/signup', { ... })
+
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({email})
