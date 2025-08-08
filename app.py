@@ -57,8 +57,11 @@ def track_view():
 # === HIER: Download-Endpunkt für emails.csv ===
 @app.route('/download-emails')
 def download_emails():
-    # emails.csv muss im gleichen Ordner liegen wie app.py
+    pw = request.args.get("pw", "")
+    if pw != "12345678910":
+        abort(403)
     return send_file('emails.csv', as_attachment=True)
+
 
 @app.route("/")
 def index():
