@@ -743,12 +743,12 @@
   // Footer-Formular
   document.getElementById('footer-submit').onclick = function() {
       const email = document.getElementById('footer-email').value;
-      fetch('/api/signup', { ... })
+fetch('/api/signup', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email })
+})
 
-          method: 'POST',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({email})
-      })
       .then(r => r.json())
       .then(data => {
           document.getElementById('footer-feedback').textContent = data.message;
@@ -774,13 +774,14 @@
     const email = document.getElementById('beta-email').value;
 
     // Klick tracken
-    fetch('http://localhost:5000/api/track_click', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({ button: 'beta_submit' })
-    });
+fetch('/api/track_click', {
+  method: 'POST',
+  headers: {'Content-Type': 'application/json'},
+  body: JSON.stringify({ button: 'beta_submit' })
+});
 
-    fetch('http://localhost:5000/api/signup', {
+
+    fetch('/api/signup', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ email })
@@ -803,18 +804,20 @@
   document.getElementById('footer-submit').onclick = function() {
     const email = document.getElementById('footer-email').value;
 
-    // Klick tracken
-    fetch('http://localhost:5000/api/track_click', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({ button: 'footer_submit' })
-    });
+// Klick tracken
+fetch('/api/track_click', {
+  method: 'POST',
+  headers: {'Content-Type': 'application/json'},
+  body: JSON.stringify({ button: 'footer_submit' })
+});
 
-    fetch('http://localhost:5000/api/signup', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({ email })
-    })
+
+fetch('/api/signup', {
+  method: 'POST',
+  headers: {'Content-Type': 'application/json'},
+  body: JSON.stringify({ email })
+})
+
     .then(async (r) => {
       const data = await r.json();
       if (r.ok) {
@@ -834,12 +837,13 @@
     btn.addEventListener('click', function(e) {
       e.preventDefault();
 
-      // Klick tracken
-      fetch('http://localhost:5000/api/track_click', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({ button: 'kostenlos_testen' })
-      });
+// Klick tracken
+fetch('/api/track_click', {
+  method: 'POST',
+  headers: {'Content-Type': 'application/json'},
+  body: JSON.stringify({ button: 'kostenlos_testen' })
+});
+
 
       document.getElementById('beta-section').scrollIntoView({ behavior: 'smooth' });
     });
@@ -851,12 +855,13 @@
     kiBtn.addEventListener('click', function(e) {
       e.preventDefault();
 
-      // Klick tracken
-      fetch('http://localhost:5000/api/track_click', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({ button: 'ki_features_ansehen' })
-      });
+// Klick tracken
+fetch('/api/track_click', {
+  method: 'POST',
+  headers: {'Content-Type': 'application/json'},
+  body: JSON.stringify({ button: 'ki_features_ansehen' })
+});
+
 
       // Optional: Hier kannst du noch Scrollen oder Weiterleitung einbauen
     });
@@ -876,11 +881,12 @@
     });
   }
 
-  // Track Seitenaufruf beim Laden der Seite
-  fetch('http://localhost:5000/api/track_view', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'}
-  });
+// Track Seitenaufruf beim Laden der Seite
+fetch('/api/track_view', {
+  method: 'POST',
+  headers: {'Content-Type': 'application/json'}
+});
+
   document.getElementById('scroll-startseite').addEventListener('click', function(e) {
   e.preventDefault();
   // 5% der Fensterhöhe nach unten scrollen
