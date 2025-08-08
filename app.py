@@ -1,10 +1,8 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template, send_file
 from flask_cors import CORS
 import csv
 import os
 from datetime import datetime
-from flask import Flask, request, jsonify, render_template
-
 
 app = Flask(__name__)
 CORS(app)  # später kannst du hier origins=["https://deine-seite.de"] setzen
@@ -55,11 +53,16 @@ def track_view():
         writer.writerow([timestamp])
 
     return jsonify({'success': True})
- 
+
+# === HIER: Download-Endpunkt für emails.csv ===
+@app.route('/download-emails')
+def download_emails():
+    # emails.csv muss im gleichen Ordner liegen wie app.py
+    return send_file('emails.csv', as_attachment=True)
+
 @app.route("/")
 def index():
     return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
-
